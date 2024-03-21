@@ -1,0 +1,123 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "language team",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "definition",
+          "slots": [
+            {
+              "name": "diseaseDefinition",
+              "type": "disease"
+            },
+            {
+              "name": "geneDefinition",
+              "type": "gene"
+            }
+          ],
+          "samples": [
+            "define {geneDefinition}",
+            "what is {geneDefinition}",
+            "show me information about {diseaseDefinition}",
+            "give me information about {diseaseDefinition}",
+            "tell me about {diseaseDefinition}",
+            "what is the {diseaseDefinition}",
+            "define {diseaseDefinition}",
+            "what is {diseaseDefinition}"
+          ]
+        },
+        {
+          "name": "causation",
+          "slots": [
+            {
+              "name": "deaseasCause",
+              "type": "disease"
+            }
+          ],
+          "samples": [
+            "reasons for {deaseasCause}",
+            "what is the cause {deaseasCause}",
+            "what causes {deaseasCause}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "cancer"
+              }
+            },
+            {
+              "name": {
+                "value": "HIV"
+              }
+            },
+            {
+              "name": {
+                "value": "flu"
+              }
+            },
+            {
+              "name": {
+                "value": "corona"
+              }
+            },
+            {
+              "name": {
+                "value": "melanoma"
+              }
+            }
+          ],
+          "name": "disease"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Virus"
+              }
+            },
+            {
+              "name": {
+                "value": "RNA"
+              }
+            }
+          ],
+          "name": "gene"
+        }
+      ]
+    }
+  },
+  "version": "8"
+}

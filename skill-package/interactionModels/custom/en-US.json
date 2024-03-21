@@ -1,0 +1,54 @@
+{
+    "interactionModel": {
+        "languageModel": {
+              "invocationName": "lifescience quiz",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "DiseaseQueryIntent",
+                    "slots": [
+                        {
+                            "name": "LSQuery",
+                            "type": "DISEASE"
+                        }
+                    ],
+                    "samples": [
+                        "Say the disease of {LSQuery}",
+                        "Find the disease of {LSQuery}"
+                    ]
+                }
+
+            ],
+
+            "types": [
+        {
+          "name": "DISEASE",
+          "values": [
+            {
+              "id": "MELANOMA",
+              "name": {
+                "value": "melanoma",
+                "synonyms": [
+                  "melanoma disease",
+                  "melanoma 1"
+                ]
+              }
+            }
+          ]
+        }
+                ]
+        }
+    }
+  }
+  

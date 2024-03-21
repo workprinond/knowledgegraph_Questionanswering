@@ -1,0 +1,29 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Capitals of the world are provided as a prototype test",
+          "examplePhrases": [
+            "Alexa open wanderlust quiz",
+            "open wanderlust quiz"
+          ],
+          "name": "capitalworld",
+          "description": "World capitals are provided"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Sample Testing Instructions.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-west-2:272677307914:function:ask-capitalworld-default-default-1611888872401"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}
